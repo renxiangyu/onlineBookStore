@@ -6,7 +6,7 @@
 <body>
 <A HREF="bookstore.jsp">Back</A></p>
 <br>
-请选择您要购买的图书
+The book you want to buy
 </br>
 <table width="60%" align="center" cellpadding="0" cellspacing="0" border="1">
 	<tr>
