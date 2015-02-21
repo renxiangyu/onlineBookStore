@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 </head>
 <body>
-<A HREF="bookstore.jsp">返回主页</A></p>
+<A HREF="bookstore.jsp">Back</A></p>
 <br>
 请选择您要购买的图书
 </br>
 <table width="60%" align="center" cellpadding="0" cellspacing="0" border="1">
 	<tr>
-		<td>书号</td>
-		<td>书名</td>
-		<td>作者</td>
-		<td>加入购物车</td>
+		<td>No</td>
+		<td>Name</td>
+		<td>Author</td>
+		<td>Add to cart</td>
 	</tr>
 <jsp:useBean id="book" class="mypack.BookDB" scope="session">
 </jsp:useBean>
@@ -27,7 +27,7 @@
 			out.println("<td>" + user.getBookId()+ "</td>");
 			out.println("<td>" + user.getName() + "</td>");
         		out.println("<td>" + user.getAuthor() + "</td>");
-			out.println("<td><a href='doadd.jsp?book=" + user + "'>删除</a></td>");
+			out.println("<td><a href='doadd.jsp?book=" + user + "'>Delete</a></td>");
 			out.println("<tr>");	
 	        }
 %>

@@ -4,7 +4,7 @@ function SubmitCheck(){
   var f=document.theForm;
  if(f.bookid.value=="")
   {
-    alert("请输入书的编号！");
+    alert("Please enter the number of the book!");
     theForm.bookid.focus();
     return false;
   }
@@ -16,15 +16,15 @@ function SubmitCheck(){
 <FORM language="JavaScript" name="theForm" METHOD="post" ACTION="bookdetails.jsp" onsubmit="return SubmitCheck()">
 <TBODY>
     <tr>
-       <A HREF="catalog.jsp">查询所有书目</A>
+       <A HREF="catalog.jsp">Search all items</A>
     </tr>
     <tr>
-       <p> 书的编号 
+       <p> No. 
           <input type="text" name="bookid"  size="19" maxlength="20" value="">
           </p>
     </tr>
     <tr>
-         <input type=submit value="提 交" name=B3>
+         <input type=submit value="Submit" name=B3>
   </FORM>
 </TABLE>
 <br>
